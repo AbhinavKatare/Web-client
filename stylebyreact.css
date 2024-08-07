@@ -1,0 +1,278 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1c160c;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #009963;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #f4efe5;
+  color: #1c160c;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  border-bottom: 1px solid #e5e8ea;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  gap: 36px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #1c160c;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: #00a64f;
+}
+
+.btn:hover {
+  background-color: #00cc82;}
+
+
+.cta-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  display: flex;
+  gap: 32px;
+  padding: 40px 16px;
+}
+
+.hero-image {
+  flex: 1;
+  height: 340px;
+  border-radius: 20px;
+  object-fit: cover;
+  min-width: 300px;
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  min-width: 400px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.25;
+}
+
+.hero-text p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-cta-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.welcome-section h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+/* Programs Section Styles */
+.programs-section {
+  padding: 40px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.program {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.program-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* About Section Styles */
+.about-section {
+  padding: 40px 16px;
+  background-color: #f4efe5;
+  padding-left: 60px;
+}
+
+.milestones {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 32px;
+}
+
+.milestone {
+  text-align: center;
+}
+
+/* Vision Section Styles */
+.vision-section {
+  padding: 40px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.vision-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.vision-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Get Involved Section Styles */
+.get-involved-section {
+  padding: 40px 16px;
+  background-color: #009963;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 40px 16px;
+  background-color: #1c160c;
+  color: #ffffff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .header {
+      padding: 12px 20px;
+  }
+
+  .navigation {
+      gap: 20px;
+  }
+
+  .hero-section {
+      flex-direction: column;
+  }
+
+  .hero-image,
+  .hero-text {
+      min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+      flex-wrap: wrap;
+  }
+
+  .navigation {
+      order: 3;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 20px;
+  }
+
+  .hero-text h1 {
+      font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navigation {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .cta-buttons {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 20px;
+  }
+
+  .hero-text h1 {
+      font-size: 28px;
+  }
+
+  .hero-cta-buttons {
+      flex-direction: column;
+  }
+}
