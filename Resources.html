@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Pragya-trust</title>
+    <link rel="stylesheet" href="Resources.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script defer src="Resources.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <b class="pragya-trust">Pragya Trust</b>
+            </div>
+        </div>
+        <nav class="navigation">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about-us.html" class="nav-item">About Us</a>
+            <a href="programs.html" class="nav-item">Programs</a>
+            <a href="Events.Html" class="nav-item">Events</a>
+            <a href="Resources.html" class="nav-item">Resources</a>
+            <a href="contact-us.html" class="nav-item">Contact Us</a>
+        </nav>
+            <div class="user-profile">
+                <img src="user-profile.png" alt="User Profile">
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Empowering Communities, Preserving the Planet</h1>
+            <p>Join us in our mission to drive transformative change</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-green">Donate Now</a>
+                <a href="#" class="btn btn-grey">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Image for about us.png" alt="Tree">
+        </div>
+    </section>
+
+    <section class="welcome">
+        <h2>Welcome to Pragya Academy</h2>
+        <p>Explore our diverse educational offerings tailored to foster growth and enlightenment.</p>
+    </section>
+
+    <section class="focus-areas">
+        <div class="focus-area">
+            <img src="education.jpg" alt="Education">
+            <h3>Lectures and Talks</h3>
+        </div>
+        <div class="focus-area">
+            <img src="healthcare.jpg" alt="Healthcare">
+            <h3>Courses</h3>
+        </div>
+        <div class="focus-area">
+            <img src="environment.jpg" alt="Environment">
+            <h3>PITCS</h3>
+        </div>
+    </section>
+
+    <section class="programs">
+        <div class="program-tabs">
+            <button class="tablink" onclick="openTab(event, 'Lectures')">Lectures and Talks</button>
+            <button class="tablink" onclick="openTab(event, 'Courses')">Courses</button>
+            <button class="tablink" onclick="openTab(event, 'PITCS')">PITCS</button>
+        </div>
+
+        <div id="Lectures" class="tabcontent">
+            <div class="program-list">
+                <div class="program-item">
+                    <img src="lecture1.jpg" alt="Apsarsha Yoga">
+                    <h3>Apsarsha Yoga</h3>
+                </div>
+                <div class="program-item">
+                    <img src="lecture2.jpg" alt="Vedanta">
+                    <h3>Vedanta</h3>
+                </div>
+                <div class="program-item">
+                    <img src="lecture3.jpg" alt="Yoga">
+                    <h3>Yoga</h3>
+                </div>
+                <div class="program-item">
+                    <img src="lecture4.jpg" alt="Tantric Agama">
+                    <h3>Tantric Agama</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="Courses" class="tabcontent">
+            <div class="course-sections">
+                <button class="tablink-inner" onclick="openInnerTab(event, 'Previous')">Previous</button>
+                <button class="tablink-inner" onclick="openInnerTab(event, 'Current')">Current</button>
+                <button class="tablink-inner" onclick="openInnerTab(event, 'Incoming')">Incoming</button>
+            </div>
+
+            <div id="Previous" class="tabcontent-inner">
+                <div class="program-list">
+                    <div class="program-item">
+                        <img src="previous1.jpg" alt="Previous Course 1">
+                        <h3>Previous Course 1</h3>
+                    </div>
+                    <div class="program-item">
+                        <img src="previous2.jpg" alt="Previous Course 2">
+                        <h3>Previous Course 2</h3>
+                    </div>
+                    <div class="program-item">
+                        <img src="previous3.jpg" alt="Previous Course 3">
+                        <h3>Previous Course 3</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Current" class="tabcontent-inner">
+                <div class="program-list">
+                    <div class="program-item">
+                        <img src="current1.jpg" alt="Current Course 1">
+                        <h3>Current Course 1</h3>
+                    </div>
+                    <div class="program-item">
+                        <img src="current2.jpg" alt="Current Course 2">
+                        <h3>Current Course 2</h3>
+                    </div>
+                    <div class="program-item">
+                        <img src="current3.jpg" alt="Current Course 3">
+                        <h3>Current Course 3</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Incoming" class="tabcontent-inner">
+                <div class="program-list">
+                    <div class="program-item">
+                        <img src="incoming1.jpg" alt="Incoming Course 1">
+                        <h3>Incoming Course 1</h3>
+                    </div>
+                    <div class="program-item">
+                        <img src="incoming2.jpg" alt="Incoming Course 2">
+                        <h3>Incoming Course 2</h3>
+                    </div>
+                    <div class="program-item">
+                        <img src="incoming3.jpg" alt="Incoming Course 3">
+                        <h3>Incoming Course 3</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="PITCS" class="tabcontent">
+            <div class="program-list">
+                <div class="program-item">
+                    <img src="pitcs1.jpg" alt="PITCS 1">
+                    <h3>PITCS 1</h3>
+                </div>
+                <div class="program-item">
+                    <img src="pitcs2.jpg" alt="PITCS 2">
+                    <h3>PITCS 2</h3>
+                </div>
+                <div class="program-item">
+                    <img src="pitcs3.jpg" alt="PITCS 3">
+                    <h3>PITCS 3</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Follow us on social media</p>
+        <a href="#" class="btn">Facebook</a>
+        <a href="#" class="btn">Twitter</a>
+        <a href="#" class="btn">Instagram</a>
+    </footer>
+</body>
+</html>
